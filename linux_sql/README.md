@@ -54,6 +54,9 @@ This sql file uses sql queries to answer differnt business questions that might 
 The schema for the database table are as shown below\:
 - `host_info` <br/>
 
+|a|b|c|
+|---|---|---|
+
 | host_info      |    | |
 | :---: | :---: || 
 | id| SERIAL  |PK|
