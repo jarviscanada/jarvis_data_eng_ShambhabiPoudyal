@@ -57,8 +57,8 @@ The schema for the database table are as shown below\:
 |a|b|c|
 |---|---|---|
 
-| host_info      |    | |
-| :---: | :---: || 
+|host_info|||
+|:---:|:---:|:---:| 
 | id| SERIAL  |PK|
 |  hostname  | VARCHAR ||
 | cpu_number    |    INTEGER || 
