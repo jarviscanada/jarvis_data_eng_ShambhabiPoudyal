@@ -76,9 +76,9 @@ The schema for the database table are as shown below\:
  |       host_id | SERIAL| FK|
   |      memory_free | INTEGER||
   |cpu_idle|INTEGER||
-        |cpu_kernel|INTEGER| |
-        |disk_io| INTEGER ||
-       |disk_available| INTEGER | |
+  |cpu_kernel|INTEGER||
+  |disk_io| INTEGER ||
+  |disk_available| INTEGER | |
 
 
 
