@@ -51,7 +51,7 @@ This sql file uses sql queries to answer differnt business questions that might 
  ```psql -h psql_host -U psql_user -d db_name -f ./sql/queries.sql```
 
 ## Database Modeling
-The schema for the database table are as shown below\:
+The database consists of two tables host_info for storing the hardware specifications and host_usage for storing the CPU and memory usage data. The schema for the database tables are as shown below\:
 - `host_info` <br/>
 
 |host_info|||
