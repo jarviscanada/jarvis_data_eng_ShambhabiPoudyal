@@ -35,3 +35,4 @@ VALUES('$hostname', '$cpu_number', '$cpu_architecture', '$cpu_model', '$cpu_mhz'
 # connecting to psql instance with given host(h), port number(p), user(U), database(d) and database command(c)
 psql -h "$hostname" -p "$psql_port" -d "$db_name" -U "$psql_user" -c "$insert_stmt"
 
+exit $?
