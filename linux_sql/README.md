@@ -6,7 +6,7 @@ This project design is suitable for small companies with their own network of se
 
 # Quick Start
 - Start a psql instance using psql\_docker.sh <br />
- ```bash ./scripts/psql\_docker.sh start jrvs-psql password```
+ ```bash ./scripts/psql_docker.sh start jrvs-psql password```
 - Create tables using psql_docker.sh <br />
  ```psql -h localhost -U postgres -d host_agent -f ./sql/ddl.sql```
 - Insert hardware specs data into the database using host_info.sh <br />
@@ -25,7 +25,9 @@ This project design is suitable for small companies with their own network of se
 # Implementation
 Three shell scripts namely psql_docker.sh, host_info.sh and host_usage.sh have been implemented for purposes described below. ddl.sql and queries.sql are the postgresql files made use for the database management. 
 ## Architecture
-https://github.com/jarviscanada/jarvis_data_eng_ShambhabiPoudyal/blob/develop/linux_sql/assets/architecture.png
+<p align="center">
+	<img src="https://github.com/jarviscanada/jarvis_data_eng_ShambhabiPoudyal/blob/develop/linux_sql/assets/architecture.png">
+</p>
 
 ## Scripts
 - psql_docker.sh
@@ -47,7 +49,7 @@ Then, the script provisions to start or stop the docker container as per the com
 A crontab has been managed to view the usage data every minute.<br/>
 
 - queries.sql <br/>
-This sql file uses sql queries to answer differnt business questions that might arise. This script answers questions like the occassion of host failure or the average memory used by each host over 5mins interval or groupping the hosts based on the hardware information. <br/>
+This sql file uses sql queries to answer different business questions that might arise. This script answers questions like the occassion of host failure or the average memory used by each host over 5mins interval or groupping the hosts based on the hardware information. <br/>
  ```psql -h psql_host -U psql_user -d db_name -f ./sql/queries.sql```
 
 ## Database Modeling
