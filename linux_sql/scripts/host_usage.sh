@@ -35,3 +35,4 @@ VALUES ('$timestamp', (SELECT distinct id FROM host_info where host_info.hostnam
 export PGPASSWORD='password'
 psql -h "$hostname" -p "$psql_port" -d "$db_name" -U "$psql_user" -c "$insert_stmt"
 
+exit $?
