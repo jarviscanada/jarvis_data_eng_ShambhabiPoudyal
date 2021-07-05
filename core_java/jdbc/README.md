@@ -4,11 +4,9 @@ This application is designed to read, write, update and delete (CURD) data again
 maven project management layout. Different Data Access Objects(DAOs) are used to represent objects that may be 
 simple rows or complex queries. Data Transfer objects(DTOs) are created using these DAOs.
 
-# Implementaiton
+# Implementation
 ## ER Diagram
-<p align="center">
-	<img src="https://github.com/jarviscanada/jarvis_data_eng_ShambhabiPoudyal/blob/develop/core_java/assets/hplussport_ER_diagram.png">
-</p>
+![ER Diagram](https://github.com/jarviscanada/jarvis_data_eng_ShambhabiPoudyal/blob/develop/core_java/jdbc/assets/hplussport_ER_diagram.png)
 
 
 ## Design Patterns
