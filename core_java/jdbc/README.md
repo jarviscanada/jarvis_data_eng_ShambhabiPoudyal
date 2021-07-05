@@ -6,7 +6,10 @@ simple rows or complex queries. Data Transfer objects(DTOs) are created using th
 
 # Implementaiton
 ## ER Diagram
-![ER Diagram](assets/hplussport_ER_diagram.png"ER Diagram")
+<p align="center">
+	<img src="/assets/hplussport_ER_diagram.png.png">
+</p>
+
 
 ## Design Patterns
 Here, DAO design pattern is used to create Customer and Order DAOs and later simply call these DAOs to perform 
