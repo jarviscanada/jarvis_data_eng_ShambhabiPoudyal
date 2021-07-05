@@ -7,7 +7,7 @@ simple rows or complex queries. Data Transfer objects(DTOs) are created using th
 # Implementaiton
 ## ER Diagram
 <p align="center">
-	<img src="/assets/hplussport_ER_diagram.png.png">
+	<img src="https://github.com/jarviscanada/jarvis_data_eng_ShambhabiPoudyal/blob/develop/core_java/assets/hplussport_ER_diagram.png">
 </p>
 
 
