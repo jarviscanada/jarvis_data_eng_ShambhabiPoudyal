@@ -93,8 +93,9 @@ public class JavaGrepImp implements JavaGrep {
         bufferedWriter.write(line);
         bufferedWriter.newLine();
       }
-    } catch (Exception ex) {
+    } catch (IOException ex) {
       logger.error("ERROR: Write to outFile failed", ex);
+      throw new RuntimeException(ex);
     }
   }
 
@@ -144,7 +145,7 @@ public class JavaGrepImp implements JavaGrep {
     try {
       javaGrepImp.process();
     } catch (Exception ex) {
-      javaGrepImp.logger.error(ex.getMessage(), ex);
+      javaGrepImp.logger.error("ERROR: JavaGrepImp process failed", ex);
     }
   }
 }
