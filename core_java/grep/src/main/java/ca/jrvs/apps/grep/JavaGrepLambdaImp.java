@@ -28,7 +28,7 @@ public class JavaGrepLambdaImp extends JavaGrepImp{
     try {
       javaGrepLambdaImp.process();
     } catch (Exception ex) {
-      javaGrepLambdaImp.logger.error(ex.getMessage(), ex);
+      javaGrepLambdaImp.logger.error("ERROR: JavaGrepImp process failed", ex);
     }
   }
 
@@ -57,6 +57,7 @@ public class JavaGrepLambdaImp extends JavaGrepImp{
           .collect(Collectors.toList());
     } catch (Exception ex) {
       logger.error("ERROR: List files from directory failed", ex);
+      throw new RuntimeException(ex);
     }
     return listFiles;
   }
