@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: ca.jrvs.apps.twitter.controller.TwitterControllerUnitTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 1, Skipped: 0, Time elapsed: 0.025 s <<< FAILURE! - in ca.jrvs.apps.twitter.controller.TwitterControllerUnitTest
+showTweet(ca.jrvs.apps.twitter.controller.TwitterControllerUnitTest)  Time elapsed: 0.013 s  <<< ERROR!
+java.lang.IllegalArgumentException: ERROR: Usage TwitterCLIApp show "tweet_id" [field1,field2,...]
+	at ca.jrvs.apps.twitter.controller.TwitterControllerUnitTest.showTweet(TwitterControllerUnitTest.java:46)
+
+deleteTweet(ca.jrvs.apps.twitter.controller.TwitterControllerUnitTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError
+	at ca.jrvs.apps.twitter.controller.TwitterControllerUnitTest.deleteTweet(TwitterControllerUnitTest.java:63)
+
+postTweet(ca.jrvs.apps.twitter.controller.TwitterControllerUnitTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError
+	at ca.jrvs.apps.twitter.controller.TwitterControllerUnitTest.postTweet(TwitterControllerUnitTest.java:37)
+
