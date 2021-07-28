@@ -79,7 +79,6 @@ A simplified version of the tweet object is created which contains the following
 }
 ```
 ## Spring
-- How you managed the dependencies using Spring?
 Spring is used to manage the dependencies. An implementation using @Bean is tested that
   passes the dependencies through method arguments. Next implementation uses @ComponentScan instead of @Bean
   which also requires to specify Beans and dependencies one by one. Another implementation uses @Components  
