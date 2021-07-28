@@ -5,12 +5,18 @@ Exception handling has also been considered with equal importance. Java code is 
 Using GCP and VNC for remote VM instance connection, this app is built using a docker engine for easier implementation purposes.
 
 # Quick Start
-#Approach 1: Using Classpath and class files
-```java -classpath target/classes ca.jrvs.apps.grep.JavaGrepImp {regex_pattern} ./data /out/grep.txt```
-#Approach 2: Using Jar file
-```java -cp target/grep-1.0-SNAPSHOT.jar ca.jrvs.apps.grep.JavaGrepImp {regex_pattern} ./data ./out/grep.txt```
-#Approach 3: Using Docker container
-```docker run --rm -v `pwd`/data:/data -v `pwd`/log:/log ${docker_user}/grep {regex_pattern} /data /log/grep.out```
+#Approach 1: Using Classpath and class files </br>
+```
+java -classpath target/classes ca.jrvs.apps.grep.JavaGrepImp {regex_pattern} ./data /out/grep.txt
+```
+#Approach 2: Using Jar file </br>
+```
+java -cp target/grep-1.0-SNAPSHOT.jar ca.jrvs.apps.grep.JavaGrepImp {regex_pattern} ./data ./out/grep.txt
+```
+#Approach 3: Using Docker container </br>
+```
+docker run --rm -v `pwd`/data:/data -v `pwd`/log:/log ${docker_user}/grep {regex_pattern} /data /log/grep.out
+```
 
 #Implemenation
 ## Pseudocode
@@ -28,8 +34,13 @@ The basic functionality of the grep app includes searching for the required stri
 memory since the task involves JVM parsing all the text input and storing it for search.
 It is possible to specify the amount of heap memory JVM uses. If this memory is not enough to run the JVM,
 OutOfMemoryError exception occurs.
+</br>
 This can be corrected by increasing the amount of memory assigned to the JVM.
-```java -Xms5m -Xmx5m -cp target/grep-1.0-SNAPSHOT.jar ca.jrvs.apps.grep.JavaGrepImp .*Romeo.*Juliet.* ./data ./out/grep.txt```
+
+```
+java -Xms5m -Xmx5m -cp target/grep-1.0-SNAPSHOT.jar ca.jrvs.apps.grep.JavaGrepImp .*Romeo.*Juliet.* ./data ./out/grep.txt
+```
+
 -Xms specifies the minimum heap size and -Xmx specifies the maximum heap size for JVM.
 Here, 5m ie, 5megabytes for both, can be replaced by 'k' for kilobytes, 'm' for megabytes and 'g' for gigabytes.
 
