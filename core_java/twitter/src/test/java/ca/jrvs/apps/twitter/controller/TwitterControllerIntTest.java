@@ -82,6 +82,6 @@ public class TwitterControllerIntTest {
     String[] argsDelete = new String[]{"delete", testTweet.getIdStr()};
     List<Tweet> tweets = controller.deleteTweet(argsDelete);
 
-    assertEquals(testTweet, tweets.get(0));
+    assertEquals(testTweet.getId(), tweets.get(0).getId());
   }
 }

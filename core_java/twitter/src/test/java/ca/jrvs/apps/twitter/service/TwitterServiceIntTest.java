@@ -1,6 +1,8 @@
 package ca.jrvs.apps.twitter.service;
 
 import static org.junit.Assert.*;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.when;
 
 import ca.jrvs.apps.twitter.dao.CrdDao;
 import ca.jrvs.apps.twitter.dao.TwitterDao;
@@ -8,6 +10,7 @@ import ca.jrvs.apps.twitter.dao.helper.HttpHelper;
 import ca.jrvs.apps.twitter.dao.helper.TwitterHttpHelper;
 import ca.jrvs.apps.twitter.model.Tweet;
 import ca.jrvs.apps.twitter.util.TweetUtil;
+import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;
@@ -48,5 +51,26 @@ public class TwitterServiceIntTest {
     assertEquals(2, newTweet.getCoordinates().getCoordinates().size());
     assertEquals(lon, newTweet.getCoordinates().getCoordinates().get(0));
     assertEquals(lat, newTweet.getCoordinates().getCoordinates().get(1));
+  }
+
+  @Test
+  public void showTweet() {
+    Tweet tweet = TweetUtil.buildTweet("test service show", -1d, 1d);
+    Tweet testTweet = twitterService.postTweet(tweet);
+
+    Tweet newTweet = twitterService.showTweet(testTweet.getIdStr(), new String[]{"id", "idStr", "text", "reTweeted"});
+
+    assertEquals(testTweet.getId(), newTweet.getId());
+  }
+
+  @Test
+  public void deleteTweet() {
+    Tweet tweet = TweetUtil.buildTweet("test service delete", -1d, 1d);
+    Tweet testTweet = twitterService.postTweet(tweet);
+
+    String[] ids = new String[]{testTweet.getIdStr()};
+    List<Tweet> newTweets = twitterService.deleteTweets(ids);
+
+    assertEquals(testTweet.getId(), newTweets.get(0).getId());
   }
 }
