@@ -11,9 +11,15 @@ import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import org.apache.http.HttpResponse;
 import org.apache.http.util.EntityUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public class TwitterDao implements CrdDao<Tweet, String> {
+
+  static final Logger logger = LoggerFactory.getLogger(TwitterDao.class);
   //URI Constants
   private static final String API_BASE_URI = "https://api.twitter.com";
   private static final String POST_PATH = "/1.1/statuses/update.json";
@@ -60,9 +66,9 @@ public class TwitterDao implements CrdDao<Tweet, String> {
     int status = response.getStatusLine().getStatusCode();
     if (status != expectedStatusCode) {
       try {
-        System.out.println(EntityUtils.toString(response.getEntity()));
+        logger.error(EntityUtils.toString(response.getEntity()));
       } catch (IOException e) {
-        System.out.println("ERROR: Response has no entity");
+        logger.error("ERROR: Response has no entity");
       }
       throw new RuntimeException("ERROR: Unexpected HTTP status:" + status);
     }
@@ -99,7 +105,6 @@ public class TwitterDao implements CrdDao<Tweet, String> {
             + AMPERSAND + "long" + EQUAL + entity.getCoordinates().getCoordinates().get(0));
       }
       else {
-        System.out.println("yes null");
         uri = new URI(API_BASE_URI + POST_PATH + QUERY_SYM + "status" + EQUAL
             + URLEncoder.encode(entity.getText(), StandardCharsets.UTF_8.toString()));
       }
