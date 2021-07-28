@@ -1,14 +1,13 @@
 # Introduction
-(50-100 words)
-What does this app do? What technologies you have used? (e.g. Twitter REST API, HTTP client, mvn, Java libs, docker etc..)
 This Java Twitter app is designed to realize the purposes of a Twitter account 
-which allows users to search, post and delete tweets via the official Twitter REST APIs.
-
-MVC
+which allows users to search, post and delete tweets via the official Twitter REST APIs. 
+A simplified tweet model is created with required dao, service and controller layers to access the tweet 
+using HTTP request. 
+Mockito and JUnit testing are used for integration and unit testing of this app. Maven dependency model is incorporated to 
+add all the necessary Java libraries (mockito, junit, fasterxml, springframework). This app has also been implemented 
+with Spring framework and docker.
 
 # Quick Start
-- how to package your app using mvn?
-- how to run your app with docker?
 A Twitter Developer account with consumer key, consumer secret, access token and token secret 
   is necessary for this app to be functioning.
 
@@ -32,9 +31,7 @@ A Twitter Developer account with consumer key, consumer secret, access token and
   ```
 
 # Design
-## UML diagram
 ![UML_TwitterApp](./assets/UML_TwitterApp.png)
-## explain each component(app/main, controller, service, DAO) (30-50 words each)
 ### TwitterCLIApp
 This class declares and instantiates all the components of the app and calls the run method. 
 The run method parses the arguments and calls the controller methods and prints the tweet(s) returned 
@@ -55,7 +52,6 @@ This class is only responsible for executing HTTP requests with a given URI. It 
 authorize the HTTP requests.
 
 ## Models
-Talk about tweet model
 Models are implemented using Plain Old Java Objects (POJOs) which is a class with private member variables and
 public getters and setters. This class encapsulates Tweet data which often displays in JSON format.
 Here, same object is used as Data Transfer Model (or DTO) and Data access model (or domain model).
@@ -84,9 +80,12 @@ A simplified version of the tweet object is created which contains the following
 ```
 ## Spring
 - How you managed the dependencies using Spring?
+Spring is used to manage the dependencies. An implementation using @Bean is tested that
+  passes the dependencies through method arguments. Next implementation uses @ComponentScan instead of @Bean
+  which also requires to specify Beans and dependencies one by one. Another implementation uses @Components  
+  which simply tells the IoC Container where to look for Beans.
 
 # Test
-How did you test you app using Junit and mockito?
 Junit test is used with the integration testing for Controller, DAO and Service layers. The purpose is 
 to test the class workflow using @Test for each method and Assertions to test the expected and actual results.
 </br>
@@ -94,10 +93,10 @@ Mockito is used in the app for unit testing to test these layer classes without 
 rather mocking them using @Mock to create dummy objects for the dependencies.
 
 ## Deployment
-How did you dockerize your app.
+A dockerized version of this app has also been generated using docker and saved for easier 
+future consumption by pushing the docker image created to the Docker hub account.
 
 
 # Improvements
-- Imporvement 1
-- Imporvement 2
-- Imporvement 3
+- Enhance the performance with increased business logic implementation
+- Create the full version of the tweet object and add necessary functionalities
