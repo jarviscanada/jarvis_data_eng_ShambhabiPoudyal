@@ -1,12 +1,12 @@
 # Shambhabi Poudyal . Jarvis Consulting
 
-Dedicated recent graduate with specialization in AI and Machine Learning who is passionate about problem solving. Seeking an opportunity to apply and expand my data exploration and data analysis skills as a Data Engineering Practitioner.
+I am a recent graduate from University of Waterloo with Masters in Electrical in Computer Engineering. With my specialization in Machine Learning and AI, I plan to start my career with Data Engineering, Data Analyst or Business Analyst positions. Being a passionate problem solver has always helped me in my academic as well as professional fronts and I believe it will be one of my important assets in these development roles as well. Having 5 years of experience in engineering roles, I am now looking forward shifting my career towards more of software development related fields. Career shift is never easy but I believe learning and insatiability are the keys. In the long run I plan to shift my career path towards technical managerial roles, my work experience as Project Head for engineering projects has added fuel to set these long term goals. I am very excited and motivated to start this journey and unfold the various chapters it has in store for me. 
 
 ## Skills
 
 **Proficient:** Java, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git
 
-**Competent:** Python, Deep Learning Python Packages, C/C++, MATLAB, (to be added)
+**Competent:** Python, Python Libraries(NumPy, SciPy, Pandas, Matplotlib, PyPlot, Seaborn), Deep Learning Python Packages(TensorFlow, Keras, ScikitLearn), C/C++, MATLAB
 
 **Familiar:** R, GCP, Docker, Google Colab, SPSS, Kaggle, MiniSat solver
 
@@ -19,9 +19,9 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_ShambhabiP
 
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_ShambhabiPoudyal/tree/master/core_java)]:
       
-  - Twitter App:
-  - JDBC App: 
-  - Grep App: 
+  - Twitter App: This Java Twitter app is designed to realize the purposes of a Twitter account which allows users to search, post and delete tweets via the official Twitter REST APIs. A simplified tweet model is created with required dao, service and controller layers to access the tweet using HTTP request. Mockito and JUnit testing are used for integration and unit testing of this app. Maven dependency model is incorporated to add all the necessary Java libraries (mockito, junit, fasterxml, springframework). This app has also been implemented with Spring framework and docker.
+  - JDBC App: JDBC application is designed to read, write, update and delete (CURD) data against RDBMS using Java DataBase Connectivity (JDBC). JDBC allows a connection between a Java application and RDBMS. Here, PostgreSql is used for RDBMS while maintaining maven project management layout. Different Data Access Objects(DAOs) are used to represent objects that may be simple rows or complex queries. Data Transfer objects(DTOs) are created using these DAOs.
+  - Grep App: Java Grep application is designed to visualize the usage of grep app in Linux systems. This app allows users to search for matching strings from files. First, the app is created using for and while loops, which is later realized using lambda and stream APIs. This app has been implemented using Java interface and required library packages including java.io, java.util, and java.slf4j. Exception handling has also been considered with equal importance. Java code is written in IntelliJ IDE with Maven project management outline. Using GCP and VNC for remote VM instance connection, this app is built using a docker engine for easier implementation purposes.
 
 **Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_ShambhabiPoudyal/tree/master/springboot)]: Not started
 
