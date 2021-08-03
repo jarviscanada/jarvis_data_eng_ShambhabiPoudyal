@@ -43,7 +43,7 @@ public class JavaGrepLambdaImp extends JavaGrepImp{
     try (Stream<String> stream = Files.lines(path)) {
       lines = stream.collect(Collectors.toList());
     } catch (Exception ex) {
-      logger.error("ERROR: Read lines from file failed", ex);
+      throw new RuntimeException("ERROR: Read lines from file failed", ex);
     }
     return lines;
   }
@@ -56,8 +56,7 @@ public class JavaGrepLambdaImp extends JavaGrepImp{
           .map(Path::toFile)
           .collect(Collectors.toList());
     } catch (Exception ex) {
-      logger.error("ERROR: List files from directory failed", ex);
-      throw new RuntimeException(ex);
+      throw new RuntimeException("ERROR: List files from directory failed", ex);
     }
     return listFiles;
   }
