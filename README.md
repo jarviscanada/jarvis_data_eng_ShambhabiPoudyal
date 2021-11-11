@@ -23,16 +23,6 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_ShambhabiP
   - JDBC App: JDBC application is designed to read, write, update and delete (CURD) data against RDBMS using Java DataBase Connectivity (JDBC). JDBC allows a connection between a Java application and RDBMS. Here, Postgresql is used for RDBMS while maintaining the maven project management layout. Different Data Access Objects(DAOs) are used to represent objects that may be simple rows or complex queries. Data Transfer Objects(DTOs) are created using these DAOs.
   - Grep App: Java Grep application is designed to visualize the usage of the grep app in Linux systems. This app allows users to search for matching strings from files. First, the app is created using for and while loops, which is later realized using lambda and stream APIs. This app has been implemented using Java interface and required library packages including java.io, java.util, and java.slf4j. Exception handling has also been considered with equal importance. Java code is written in IntelliJ IDE with Maven project management outline. Using GCP and VNC for remote VM instance connection, this app is built using a docker engine for easier implementation purposes.
 
-**Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_ShambhabiPoudyal/tree/master/springboot)]: Not started
-
-**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_ShambhabiPoudyal/tree/master/python_data_anlytics)]: Not Started
-
-**Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_ShambhabiPoudyal/tree/master/hadoop)]: Not Started
-
-**Spark** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_ShambhabiPoudyal/tree/master/spark)]: Not Started
-
-**Cloud/DevOps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_ShambhabiPoudyal/tree/master/cloud_devops)]: Not Started
-
 
 ## Highlighted Projects
 **License Plate Detection and Recognition using Joint CNNs**:  Implemented cascaded CNN model to detect license plate with high accuracy and speed. Used holistic CNN structure for recognition of detected license plates. Obtained an overall accuracy of 98% on CCPD parking dataset containing wide variety of license plates. Experimented with a total of 250k images. Used Google Colab, Python, NumPy, SciPy, TensorFlow, Keras, Pandas, Matplotlib, PyPlot

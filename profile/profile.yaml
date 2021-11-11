@@ -69,21 +69,6 @@ jarvis_projects:
                    library packages including java.io, java.util, and java.slf4j. Exception handling has also been considered with equal
                    importance. Java code is written in IntelliJ IDE with Maven project management outline. Using GCP and VNC
                    for remote VM instance connection, this app is built using a docker engine for easier implementation purposes."
-  - name: "Springboot App"
-    git_url: "/springboot"
-    description: "Not started"
-  - name: "Python Data Analytics"
-    git_url: "/python_data_anlytics"
-    description: ""
-  - name: "Hadoop"
-    git_url: "/hadoop"
-    description: ""
-  - name: "Spark"
-    git_url: "/spark"
-    description: ""
-  - name: "Cloud/DevOps"
-    git_url: "/cloud_devops"
-    description: ""
 
 # List of personal or academic projects
 # Feel free to add more projects
