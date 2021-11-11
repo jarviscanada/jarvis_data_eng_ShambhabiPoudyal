@@ -23,15 +23,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_ShambhabiP
   - JDBC App: JDBC application is designed to read, write, update and delete (CURD) data against RDBMS using Java DataBase Connectivity (JDBC). JDBC allows a connection between a Java application and RDBMS. Here, Postgresql is used for RDBMS while maintaining the maven project management layout. Different Data Access Objects(DAOs) are used to represent objects that may be simple rows or complex queries. Data Transfer Objects(DTOs) are created using these DAOs.
   - Grep App: Java Grep application is designed to visualize the usage of the grep app in Linux systems. This app allows users to search for matching strings from files. First, the app is created using for and while loops, which is later realized using lambda and stream APIs. This app has been implemented using Java interface and required library packages including java.io, java.util, and java.slf4j. Exception handling has also been considered with equal importance. Java code is written in IntelliJ IDE with Maven project management outline. Using GCP and VNC for remote VM instance connection, this app is built using a docker engine for easier implementation purposes.
 
-**Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_ShambhabiPoudyal/tree/master/springboot)]: Not started
-
-**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_ShambhabiPoudyal/tree/master/python_data_anlytics)]: Not Started
-
-**Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_ShambhabiPoudyal/tree/master/hadoop)]: Not Started
-
-**Spark** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_ShambhabiPoudyal/tree/master/spark)]: Not Started
-
-**Cloud/DevOps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_ShambhabiPoudyal/tree/master/cloud_devops)]: Not Started
+**Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_ShambhabiPoudyal/tree/master/hadoop)]: This Hadoop project focuses on data analytics processing Big Data using Core Hadoop components like HDFS, MapReduce and YARN. Here, a Hadoop cluster with a master node and two working nodes is created for the analysis in the GCP dataproc. Public dataset worlsbank_wdi hosted on Google BigQuery is used for reference and analytical purposes. A Hive project is created with Zeppelin notebook using GCP web interfaces for executing the SQL queries.
 
 
 ## Highlighted Projects
