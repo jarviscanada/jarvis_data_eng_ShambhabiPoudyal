@@ -71,7 +71,7 @@ jarvis_projects:
                    for remote VM instance connection, this app is built using a docker engine for easier implementation purposes."
 
   - name: "Hadoop"
-    git_url: ""
+    git_url: "/hadoop"
     description: "This Hadoop project focuses on data analytics processing Big Data using Core Hadoop components like HDFS, MapReduce and YARN. 
     Here, a Hadoop cluster with a master node and two working nodes is created for the analysis in the GCP dataproc. 
     Public dataset worlsbank_wdi hosted on Google BigQuery is used for reference and analytical purposes. 
