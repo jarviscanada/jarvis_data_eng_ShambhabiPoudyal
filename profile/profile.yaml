@@ -70,6 +70,14 @@ jarvis_projects:
                    importance. Java code is written in IntelliJ IDE with Maven project management outline. Using GCP and VNC
                    for remote VM instance connection, this app is built using a docker engine for easier implementation purposes."
 
+  - name: "Hadoop"
+    git_url: ""
+    description: "This Hadoop project focuses on data analytics processing Big Data using Core Hadoop components like HDFS, MapReduce and YARN. 
+    Here, a Hadoop cluster with a master node and two working nodes is created for the analysis in the GCP dataproc. 
+    Public dataset worlsbank_wdi hosted on Google BigQuery is used for reference and analytical purposes. 
+    A Hive project is created with Zeppelin notebook using GCP web interfaces for executing the SQL queries."
+
+    
 # List of personal or academic projects
 # Feel free to add more projects
 highlighted_projects:
